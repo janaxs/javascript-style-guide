@@ -33,8 +33,8 @@ This is how you should format your code, mainly related to [`.jscsrc`](.jscsrc).
 
 * [Basic code formatting](#basic-code-formatting)
 * [Semicolon](#semicolon)
-* [Wrap statements in block](#wrap-statements-in-block)
-* [Readability with whitespace](#readability-with-whitespace)
+* [Block](#block)
+* [Whitespace](#whitespace)
 * [Multiline](#multiline)
 
 
@@ -85,15 +85,34 @@ Test case: [semicolon.js](test/semicolon.js).
 
 
 
-### Wrap statements in block
+### Block
 
-The following statements should be followed by a block of code wrapped in curly braces.
+The statements `if, else, for, while, do, switch, try, catch` should be followed by a block of code wrapped in curly braces.
 
-`if, else, for, while, do, switch, try, catch`.
+```
+if (some) {
+    void 0;
+}
+```
 
-You may omit block wrapped in curly braces within a switch statement.
+You may omit block wrapped in curly braces within a switch statement for `case, default`. Both ways are valid.
 
-`case, default`.
+```
+// without curly braces
+switch (some) {
+    case 1:
+        void 0;
+        void 0;
+    break;
+
+// with curly braces
+switch (some) {
+    case 1: {
+        void 0;
+        void 0;
+    }
+    break;
+```
 
 Related settings in `.jscsrc`.
 
@@ -120,11 +139,9 @@ Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js)
 
 
 
-### Readability with whitespace
+### Whitespace
 
-The following statements should be followed by whitespace.
-
-`if, else, for, while, do, switch, try, catch, function, return`.
+Statements like `if, else, for, while, do, switch, try, catch, function, return` should be followed by whitespace.
 
 Require a space inbetween the arguments of the for statement.
 
