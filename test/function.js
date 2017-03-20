@@ -53,6 +53,14 @@
         a = b;
     };
 
+    func = (function () {
+        return 1;
+    })();
+
+    func = (function () {
+        return 1;
+    }());
+
     // should fail
 
     // fails
@@ -79,5 +87,11 @@
 
         // arguments separated by ", "
         func = function a(a , b) {
+
+        // IIFE must wrap within parantheses
+        func = function () {
+            return 1;
+        }();
+
     */
-}());
+})();

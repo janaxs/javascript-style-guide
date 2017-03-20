@@ -1,9 +1,11 @@
 Revision history
 =======================================
 
-v0.9.3* (2017-03-20)
+v0.9.3 (2017-03-20)
 ---------------------------------------
 
+* Add eslint as test with .eslintrc.json and passes test.
+* Add identifier naming.
 * Function parameters should be separated by ", ".
 * Object keys should be a single line or each key on a separate line.
 * Assignments separated by newline.

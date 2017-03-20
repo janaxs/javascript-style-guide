@@ -4,6 +4,7 @@
 (function () {
     "use strict";
 
+    /* eslint no-unused-vars: "off" */
     var a, b;
 
     a = [1, 2];

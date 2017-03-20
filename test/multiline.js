@@ -63,6 +63,9 @@
         && arg3 < 0
         || arg4 > 0);
 
+    // avoid warnings on unused
+    b = a;
+
     // should fail
 
     // fails

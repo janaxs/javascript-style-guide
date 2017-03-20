@@ -33,9 +33,11 @@ This is how you should format your code, the rules are mainly related to [`.jscs
 
 * [Basic code formatting](#basic-code-formatting)
 * [Semicolon](#semicolon)
+* [Identifier naming](#identifier-naming)
 * [Block](#block)
 * [Whitespace](#whitespace)
 * [Multiline](#multiline)
+* [Other](#other)
 
 
 
@@ -51,10 +53,13 @@ A file should have a empty line feed at the end.
 
 There should be no trailing whitespace.
 
-`.jscsrc`
+Settings related to `.jscsrc`.
 
 ```
-"validateIndentation":          4,
+"validateIndentation": {
+    "value": 4,
+    "allExcept": ["comments", "emptyLines"]
+},
 "disallowTabs":                 true,
 "validateLineBreaks":           "LF",
 "requireLineFeedAtFileEnd":     true,
@@ -67,21 +72,49 @@ There should be no trailing whitespace.
 
 You can decide on wether to use semicolon or not (dbwebb requires semicolon).
 
-`.jscsrc`
+Settings related to `.jscsrc`.
 
 ```
 "requireSemicolons": true,
 ```
 
-If you decide to not require semicolons, check out the following settings.
+If you decide to not require semicolons.
 
-`.jshintrc`
+Settings related to `.jshintrc`.
 
 ```
 "asi": true,
 ```
 
 Test case: [semicolon.js](test/semicolon.js).
+
+
+
+### Identifier naming
+
+Use camelCase or UPPERCASE_WITH_UNDERSCORE for naming your variables. An exception is object keys.
+
+```
+var camelCase = 0;
+var CamelCase = 1; // PascalCase should fail
+var _camelCase = 2; // should fail
+var camelCase_ = 3; // should fail
+var UPPER_CASE = 4;
+var snakeCase = {
+    snake_case: 6
+};
+var obj = {};
+
+obj.snake_case = 5;
+```
+ 
+Settings related to `.jscsrc`.
+
+```
+"requireCamelCaseOrUpperCaseIdentifiers": true,
+```
+
+Test case: [variable.js](test/variable.js).
 
 
 
@@ -403,6 +436,25 @@ Related settings in `.jshintrc`.
 ```
 
 Test case: [multiline.js](test/multiline.js), [variable.js](test/variable.js).
+
+
+
+### Other
+
+Parantheses should be used wrapping an immediately invoked function expression.
+
+```
+(function () { … })();
+(function () { … }());  // Douglas Crockford's style
+```
+
+Related settings in `.jscsrc`.
+
+```
+"requireParenthesesAroundIIFE": true
+```
+
+Test case: [function.js](test/function.js).
 
 
 

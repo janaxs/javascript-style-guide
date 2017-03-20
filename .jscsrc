@@ -1,11 +1,18 @@
 {
-	"validateIndentation": 4,
+	"validateIndentation": {
+		"value": 4,
+		"allExcept": ["comments", "emptyLines"]
+	},
 	"disallowTabs": true,
 	"validateLineBreaks": "LF",
 	"requireLineFeedAtFileEnd": true,
 	"disallowTrailingWhitespace": true,
 
 	"requireSemicolons": true,
+
+	"requireCamelCaseOrUpperCaseIdentifiers": {
+		"ignoreProperties": true
+	},
 
 	"requireCurlyBraces": [
 		"if",
@@ -91,5 +98,7 @@
 	"disallowMultipleLineStrings": true,
 	"requireObjectKeysOnNewLine": {
     	"allExcept": ["sameLine"]
-	}
+	},
+
+	"requireParenthesesAroundIIFE": true
 }

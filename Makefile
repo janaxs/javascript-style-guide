@@ -51,6 +51,7 @@ help:
 
 # Add local bin path for test tools
 JSCS 		:= node_modules/.bin/jscs
+ESLINT 		:= node_modules/.bin/eslint
 JSHINT 		:= node_modules/.bin/jshint
 JSONLINT   	:= node_modules/.bin/jsonlint
 
@@ -92,8 +93,9 @@ check:
 	@$(call HELPTEXT,$@)
 	node --version
 	npm --version
-	npm list jscs jshint jsonlint
+	npm list jscs eslint jshint jsonlint
 	$(JSCS) --version
+	$(ESLINT) --version
 	$(JSHINT) --version
 	-$(JSONLINT) --version
 
@@ -101,7 +103,7 @@ check:
 
 # target: test               - Run all tests.
 .PHONY:  test
-test: jsonlint jscs jshint
+test: jsonlint jscs eslint jshint
 	@$(call HELPTEXT,$@)
 	#npm validate config file
 
@@ -160,6 +162,22 @@ jscs:
 jscs-fix:
 	@$(call HELPTEXT,$@)
 	$(JSCS) --fix $(JS_SOURCES)
+
+
+
+# target: eslint               - Fix fixable validation errors with eslint.
+.PHONY: eslint
+eslint:
+	@$(call HELPTEXT,$@)
+	$(ESLINT) $(JS_SOURCES)
+
+
+
+# target: eslint-fix         - Validate using eslint.
+.PHONY: eslint-fix
+eslint-fix:
+	@$(call HELPTEXT,$@)
+	$(ESLINT) --fix $(JS_SOURCES)
 
 
 

@@ -11,12 +11,12 @@
         case 1:
             void 0;
             void 0;
-        break;
+            break;
 
         case 2:
             void 0;
             void 0;
-        break;
+            break;
 
         default:
             void 0;
@@ -29,13 +29,13 @@
             void 0;
             void 0;
         }
-        break;
+            break;
 
         case 2: {
             void 0;
             void 0;
         }
-        break;
+            break;
 
         default: {
             void 0;

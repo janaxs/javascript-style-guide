@@ -21,6 +21,7 @@
         throw exc;
     }
 
+    /* eslint no-unreachable : "off" */
     try {
         throw new UserException("Failed");
     } catch (exc) {
