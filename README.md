@@ -55,7 +55,7 @@ There should be no trailing whitespace.
 
 ```
 "validateIndentation":          4,
-"disallowMixedSpacesAndTabs":   true,
+"disallowTabs":                 true,
 "validateLineBreaks":           "LF",
 "requireLineFeedAtFileEnd":     true,
 "disallowTrailingWhitespace":   true,
