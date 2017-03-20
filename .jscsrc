@@ -7,28 +7,59 @@
 
 	"requireSemicolons": true,
 
+	"requireCurlyBraces": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"try",
+		"catch",
+	],
 
+	"disallowKeywords": [
+		"with"
+	],
 
-
-
-	"requireCurlyBraces": ["while", "do", "try", "catch", "for"],
-	"disallowKeywords": [ "with" ],
-
-
-
-	"requireAlignedMultilineParams": "firstParam",
-
-
-
-	"requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch"],
+	"requireSpaceAfterKeywords": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"try",
+		"catch",
+		"function",
+		"return"
+	],
 	"requireSpacesInForStatement": true,
-	"requireSpaceAfterComma": {"allExcept": ["trailing"]},
 	"requireSpaceBeforeBlockStatements": 1,
-	"requireSpacesInFunctionExpression": {
+	"requireSpacesInFunctionDeclaration": {
 	    "beforeOpeningCurlyBrace": true
 	},
+	"disallowSpacesInFunctionDeclaration": {
+	    "beforeOpeningRoundBrace": true
+	},
+	"disallowSpacesInNamedFunctionExpression": {
+	    "beforeOpeningRoundBrace": true
+	},
+	"requireSpacesInFunctionExpression": {
+		"beforeOpeningCurlyBrace": true
+	},
+	"requireSpaceAfterComma": {
+		"allExcept": ["trailing"]
+	},
+	"disallowSpaceBeforeComma": {
+		"allExcept": ["sparseArrays"]
+	},
+	"disallowSpaceBeforeSemicolon": {
+		"allExcept": [ "(" ]
+	},
+	"disallowSpaceAfterObjectKeys": true,
+	"requireSpaceBeforeObjectValues": true,
 
-	"disallowSpaceBeforeComma": {"allExcept": ["sparseArrays"]},
-	"disallowSpaceBeforeSemicolon": { "allExcept": [ "(" ] }
-
+	"maximumLineLength": 100,
+	"requireAlignedMultilineParams": true
 }

@@ -33,6 +33,9 @@ This is how you should format your code, mainly related to [`.jscsrc`](.jscsrc).
 
 * [Basic code formatting](#basic-code-formatting)
 * [Semicolon](#semicolon)
+* [Wrap statements in block](#wrap-statements-in-block)
+* [Readability with whitespace](#readability-with-whitespace)
+* [Multiline](#multiline)
 
 
 
@@ -75,10 +78,226 @@ If you decide to not require semicolons, check out the following settings.
 `.jshintrc`
 
 ```
-"asi":          true,
+"asi": true,
 ```
 
 Test case: [semicolon.js](test/semicolon.js).
+
+
+
+### Wrap statements in block
+
+The following statements should be followed by a block of code wrapped in curly braces.
+
+`if, else, for, while, do, switch, try, catch`.
+
+You may omit block wrapped in curly braces within a switch statement.
+
+`case, default`.
+
+Related settings in `.jscsrc`.
+
+```
+"requireCurlyBraces": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "try",
+    "catch",
+],
+```
+
+`.jshintrc`
+
+```
+"curly": true,
+```
+
+Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js), [do.js](test/do.js), [switch.js](test/switch.js), [throw-try-catch.js](test/throw-try-catch.js).
+
+
+
+### Readability with whitespace
+
+The following statements should be followed by whitespace.
+
+`if, else, for, while, do, switch, try, catch, function, return`.
+
+Require a space inbetween the arguments of the for statement.
+
+`for (i=1; i<0; i--) {`
+
+Require a space before block statements.
+
+`if (some) {`
+
+When defining a function, disallow space before round brace and require a space before curly brace.
+
+```
+function a() {
+```
+
+Require a space before opening curly brace in function expressions and before the round brace (excluded in named function where the space is before the name).
+
+```
+var x = function () {};
+var x = function a() {};
+```
+
+Require a space after a comma, except when the comma is last. Disallow a space before a comma. An exception is sparse arrays which are allowed. However, arrays with empty elements are disallowed by jshint option elision.
+
+```
+var a, b;
+a = [1, 2];
+a = [1, 2,];
+b = [1, 2, , , 3];
+```
+
+Disallow space before semicolon, except when used after a parathesis.
+
+`for ( ; i<0; i++) {`
+
+Disallow space after object key but require space before object value.
+
+`var x = {a: 1};`
+
+Related settings in `.jscsrc`.
+
+```
+"requireSpaceAfterKeywords": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "try",
+    "catch",
+    "function",
+    "return"
+],
+"requireSpacesInForStatement": true,
+"requireSpaceBeforeBlockStatements": 1,
+"requireSpacesInFunctionDeclaration": {
+    "beforeOpeningCurlyBrace": true
+},
+"disallowSpacesInFunctionDeclaration": {
+    "beforeOpeningRoundBrace": true
+},
+"disallowSpacesInNamedFunctionExpression": {
+    "beforeOpeningRoundBrace": true
+},
+"requireSpacesInFunctionExpression": {
+    "beforeOpeningCurlyBrace": true
+},
+"requireSpaceAfterComma": {
+    "allExcept": ["trailing"]
+},
+"disallowSpaceBeforeComma": {
+    "allExcept": ["sparseArrays"]
+},
+"disallowSpaceBeforeSemicolon": {
+    "allExcept": [ "(" ]
+},
+"disallowSpaceAfterObjectKeys": true,
+"requireSpaceBeforeObjectValues": true,
+```
+
+Related settings in `.jshintrc`.
+
+```
+"elision": false,
+```
+
+Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js), [do.js](test/do.js), [switch.js](test/switch.js), [throw-try-catch.js](test/throw-try-catch.js), [function.js](test/function.js), [space-comma.js](test/space-comma.js), [space-semicolon.js](test/space-semicolon.js), [object.js](test/object.js).
+
+
+
+### Multiline
+
+A line should not be to long, the recommendation is 80 characters, but feel fre to set 100 or 120 (dbwebb uses 100 characters), the less the better.
+
+Make a multiline expression to fit the proposed line length.
+
+```
+a = "a very long row"
+    + "a very long row"
+    + "a very long row";
+```
+
+Break long if-statements (while, do) into multiline statements.
+
+```
+if (arg1 < 0
+    && arg2 < 0
+    && arg3 < 0
+    || arg4 > 0
+) {
+    void 0;
+}
+
+while (arg1 < 0
+    && arg2 < 0
+    && arg3 < 0
+    || arg4 > 0
+) {
+    void 0;
+}
+
+do {
+    void 0;
+} while (arg1 < 0
+    && arg2 < 0
+    && arg3 < 0
+    || arg4 > 0);
+```
+
+You can write the ternary operator as single line or as multiline.
+
+```
+a = b ? c : d;
+a = b
+    ? c
+    : d;
+```
+
+Define a function over several lines when it has several arguments and ensure that the arguments are aligned. Call a function as multiline when haveing several and/or long arguments.
+
+```
+function func(
+    arg1,
+    arg2,
+    arg3,
+    arg4
+) {
+    return arg1 + arg2 + arg3 + arg4;
+}
+
+func(arg1, arg2, arg3, arg4);
+func(arg1,
+    arg2,
+    arg3,
+    arg4
+);
+```
+
+Related settings in `.jscsrc`.
+
+```
+"maximumLineLength": 100,
+"requireAlignedMultilineParams": true
+```
+
+Related settings in `.jshintrc`.
+
+```
+"laxbreak": true,
+```
+
+Test case: [multiline.js](test/multiline.js).
 
 
 
@@ -88,6 +307,7 @@ Part II: Good code
 This is how you write good best practise code. The settings are mainly related to [`.jshintrc`](.jshintrc).
 
 * [Use strict](#use-strict)
+* [No use of with](#no-use-of-with)
 
 
 
@@ -104,6 +324,22 @@ On serverside you can use strict on file level, at the beginning of each file.
 ```
 "strict": "true",
 ```
+
+
+
+### No use of with
+
+Do not use with statements. The use of with is also prohibited though [strict](#strict).
+
+`.jscs`
+
+```
+"disallowKeywords": [
+    "with"
+],
+```
+
+Test case: [with.js](test/with.js).
 
 
 

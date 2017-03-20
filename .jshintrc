@@ -1,10 +1,13 @@
 {
     "strict": "true",
 
-
-
-
     "curly": true,
+
+    "elision": false,
+
+    "laxbreak": true,
+
+
     "esversion": 6,
     "freeze": true,
     "futurehostile": true,

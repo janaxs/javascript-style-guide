@@ -1,7 +1,7 @@
 /**
  * Semicolons.
  */
-(function() {
+(function () {
     "use strict";
 
     var abc, def;
