@@ -294,6 +294,17 @@ Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js)
 
 A line should not be to long, the recommendation is 80 characters, but feel fre to set 100 or 120 (dbwebb uses 100 characters), the less the better.
 
+Variable assignment should be separated by newline.
+
+```
+var a = 1,
+    b = 2;
+
+// or even better
+var a = 1;
+var b = 2;
+```
+
 Make a multiline expression to fit the proposed line length. Disallow using `\` to create multiline strings. Use concatenation instead, or template strings.
 
 ```
@@ -362,6 +373,7 @@ Related settings in `.jscsrc`.
 
 ```
 "maximumLineLength": 100,
+"requireLineBreakAfterVariableAssignment": true,
 "requireAlignedMultilineParams": true,
 "requireCommaBeforeLineBreak": true
 ```
@@ -372,7 +384,7 @@ Related settings in `.jshintrc`.
 "laxbreak": true,
 ```
 
-Test case: [multiline.js](test/multiline.js).
+Test case: [multiline.js](test/multiline.js), [variable.js](test/variable.js).
 
 
 

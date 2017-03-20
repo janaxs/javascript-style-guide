@@ -82,6 +82,7 @@
 	"disallowPaddingNewlinesInBlocks": true,
 
 	"maximumLineLength": 100,
+	"requireLineBreakAfterVariableAssignment": true,
 	"requireAlignedMultilineParams": true,
 	"requireCommaBeforeLineBreak": true,
 	"disallowMultipleLineStrings": true
