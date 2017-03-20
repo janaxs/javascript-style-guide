@@ -24,6 +24,7 @@
 		"catch",
 		"finally"
 	],
+	"requireBlocksOnNewline": true,
 
 	"disallowKeywords": [
 		"with"

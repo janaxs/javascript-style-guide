@@ -51,5 +51,8 @@
         void 0;
     }
 
+    // needs newline after opening brace
+    if (true) {doSomething();}
+
     */
 }());

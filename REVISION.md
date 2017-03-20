@@ -4,6 +4,7 @@ Revision history
 v0.9.3* (2017-03-20)
 ---------------------------------------
 
+* Require non empty blocks to begin and end with a newline.
 * Disallow padding newlines within block.
 
 

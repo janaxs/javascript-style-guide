@@ -136,6 +136,18 @@ try {
 }
 ```
 
+The opening curly brace should go on the same line as the keyword. Do not use a linebreak before the opening curly brace.
+
+All non-empty blocks should have a newline after the curly brace.
+
+```
+if (true) {
+    doSomething();
+}
+
+var x = function () {};
+```
+
 Related settings in `.jscsrc`.
 
 ```
@@ -156,6 +168,19 @@ Related settings in `.jscsrc`.
     "catch",
     "finally"
 ],
+"disallowNewlineBeforeBlockStatements": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "try",
+    "catch",
+    "function",
+    "class"
+],
+"requireBlocksOnNewline": true,
 ```
 
 Related settings in `.jshintrc`.
@@ -171,8 +196,6 @@ Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js)
 ### Whitespace
 
 Statements like `if, else, for, while, do, switch, try, catch, function, return` should be followed by whitespace.
-
-The opening curly brace should go on the same line as the keyword. Do not use a linebreak before the opening curly brace.
 
 Require a space inbetween the arguments of the for statement.
 
@@ -211,6 +234,8 @@ Disallow space before semicolon, except when used after a parathesis.
 Disallow space after object key but require space before object value.
 
 `var x = {a: 1};`
+
+Disallow empty lines at the beginning and the end of a block.
 
 Related settings in `.jscsrc`.
 
@@ -252,18 +277,7 @@ Related settings in `.jscsrc`.
 },
 "disallowSpaceAfterObjectKeys": true,
 "requireSpaceBeforeObjectValues": true,
-"disallowNewlineBeforeBlockStatements": [
-    "if",
-    "else",
-    "for",
-    "while",
-    "do",
-    "switch",
-    "try",
-    "catch",
-    "function",
-    "class"
-],
+"disallowPaddingNewlinesInBlocks": true,
 ```
 
 Related settings in `.jshintrc`.
