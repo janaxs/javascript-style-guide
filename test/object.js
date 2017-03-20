@@ -6,12 +6,12 @@
 
     var obj;
 
-    obj = {a: 1, b: 2};
+    obj = {a: 1, b: 2, c: 3};
     obj = {
         a: 1,
-        b: 2
+        b: 2,
+        c: 3
     };
-
 
     // fails
     /*
@@ -28,6 +28,12 @@
     obj = {
         a:1,
         b: 2
+    };
+
+    // all on one line or keys on separate line
+    var a = {
+        b: 'b', c: 'c',
+        a: 1
     };
 
      */

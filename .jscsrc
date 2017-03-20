@@ -85,5 +85,8 @@
 	"requireLineBreakAfterVariableAssignment": true,
 	"requireAlignedMultilineParams": true,
 	"requireCommaBeforeLineBreak": true,
-	"disallowMultipleLineStrings": true
+	"disallowMultipleLineStrings": true,
+	"requireObjectKeysOnNewLine": {
+    	"allExcept": ["sameLine"]
+	}
 }

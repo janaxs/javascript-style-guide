@@ -36,6 +36,8 @@
     // fails
     /*
     if (some) void 0;
+    if (some)
+        void 0;
 
     // else on same line as }
     if (some) {

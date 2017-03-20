@@ -349,6 +349,17 @@ a = b
     : d;
 ```
 
+An object can be defined on a single line or on a multiline.
+
+```
+var obj = {a: 1, b: 2, c: 3};
+var obj = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+```
+
 Define a function over several lines when it has several arguments and ensure that the arguments are aligned. Call a function as multiline when haveing several and/or long arguments.
 
 ```
@@ -375,7 +386,10 @@ Related settings in `.jscsrc`.
 "maximumLineLength": 100,
 "requireLineBreakAfterVariableAssignment": true,
 "requireAlignedMultilineParams": true,
-"requireCommaBeforeLineBreak": true
+"disallowMultipleLineStrings": true,
+"requireObjectKeysOnNewLine": {
+    "allExcept": ["sameLine"]
+}
 ```
 
 Related settings in `.jshintrc`.
