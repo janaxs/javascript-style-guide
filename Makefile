@@ -126,6 +126,9 @@ update:
 .PHONY: tag-prepare
 tag-prepare:
 	@$(call HELPTEXT,$@)
+	grep version package.json
+	git tag
+	git status
 
 
 
