@@ -1,34 +1,30 @@
 {
-  "name": "javascript-style-guide",
-  "version": "1.0.0",
-  "description": "JavaScript Style Guide for client and server code, clean, unobtrusive, unopiniated, without transpilation and plain basics together with jscs and jshint configurations.",
-  "main": "index.js",
-  "dependencies": {
-    "jscs": "^3.0.7",
-    "jshint": "^2.9.4"
-  },
-  "devDependencies": {
-    "jscs": "^3.0.7",
-    "jshint": "^2.9.4",
-    "jsonlint": "^1.6.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/canax/javascript-style-guide.git"
-  },
-  "keywords": [
-    "javascript",
-    "codestyle",
-    "jscs",
-    "jshint"
-  ],
-  "author": "Mikael Roos",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/canax/javascript-style-guide/issues"
-  },
-  "homepage": "https://github.com/canax/javascript-style-guide#readme"
+    "name": "javascript-style-guide",
+    "version": "0.9.0",
+    "description": "JavaScript Style Guide with basics for client and server code, clean, unobtrusive, unopiniated, without transpilation together with jscs and jshint configurations.",
+    "main": null,
+    "devDependencies": {
+        "jscs": "^3.0.7",
+        "jshint": "^2.9.4",
+        "jsonlint": "^1.6.2"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/canax/javascript-style-guide.git"
+    },
+    "keywords": [
+        "javascript",
+        "codestyle",
+        "jscs",
+        "jshint"
+    ],
+    "author": "Mikael Roos mos@dbwebb.se (https://mikaelroos.se)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/canax/javascript-style-guide/issues"
+    },
+    "homepage": "https://github.com/canax/javascript-style-guide#readme"
 }

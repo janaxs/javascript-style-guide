@@ -9,6 +9,8 @@
 
 
 
+
+
 	"requireCurlyBraces": ["while", "do", "try", "catch", "for"],
 	"disallowKeywords": [ "with" ],
 
