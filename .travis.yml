@@ -1,0 +1,55 @@
+language: node_js
+
+node_js:
+    - "6"
+    - "5"
+    - "4"
+    - "iojs"
+    - "node"
+    #- "4.1"
+    #- "0.12"
+    #- "0.11"
+    #- "0.10"
+
+
+
+sudo: false
+
+
+
+git:
+    submodules: false
+
+
+
+addons:
+    apt:
+        packages:
+            #- php-codesniffer
+            #- phpmd
+            #- shellcheck
+
+
+
+before_script:
+    - make install
+    - make check
+
+
+
+script:
+    - make test
+
+
+
+notifications:
+    irc: "irc.freenode.org#dbwebb"
+
+    webhooks:
+        urls:
+            - https://webhooks.gitter.im/e/fb3c7b14dfb0c259a447
+
+        # options: [always|never|change] default: always
+        on_success: change
+        on_failure: always
+        on_start: never
