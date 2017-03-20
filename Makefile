@@ -56,7 +56,7 @@ JSHINT 		:= node_modules/.bin/jshint
 JSONLINT   	:= node_modules/.bin/jsonlint
 
 # Find sources
-JSON_SOURCES 	:= $(wildcard *.json) .jscsrc jshintrc
+JSON_SOURCES 	:= $(wildcard *.json) $(wildcard .*.json) .jscsrc jshintrc
 JS_SOURCES 		:= $(wildcard test/*.js)
 
 

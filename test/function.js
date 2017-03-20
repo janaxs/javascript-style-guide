@@ -47,6 +47,10 @@
         void 0;
     })();
 
+    (function () {
+        void 0;
+    }());
+
     func = function () {};
     func = function a() {};
     func = function a(a, b) {
@@ -94,4 +98,4 @@
         }();
 
     */
-})();
+}());

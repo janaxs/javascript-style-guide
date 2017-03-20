@@ -251,13 +251,15 @@ var x = function () {};
 var x = function a() {};
 ```
 
-Require a space after a comma, except when the comma is last. Disallow a space before a comma. An exception is sparse arrays which are allowed. However, arrays with empty elements are disallowed by jshint option elision.
+Require a space after a comma.
 
 ```
 var a, b;
 a = [1, 2];
-a = [1, 2,];
-b = [1, 2, , , 3];
+b = [
+    1,
+    2,
+];
 ```
 
 Disallow space before semicolon, except when used after a parathesis.
@@ -315,12 +317,6 @@ Related settings in `.jscsrc`.
 "disallowPaddingNewlinesInBlocks": true,
 "requirePaddingNewLineAfterVariableDeclaration": true,
 "validateParameterSeparator": ", ",
-```
-
-Related settings in `.jshintrc`.
-
-```
-"elision": false,
 ```
 
 Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js), [do.js](test/do.js), [switch.js](test/switch.js), [throw-try-catch.js](test/throw-try-catch.js), [function.js](test/function.js), [space-comma.js](test/space-comma.js), [space-semicolon.js](test/space-semicolon.js), [object.js](test/object.js).
