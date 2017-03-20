@@ -334,7 +334,8 @@ Related settings in `.jscsrc`.
 
 ```
 "maximumLineLength": 100,
-"requireAlignedMultilineParams": true
+"requireAlignedMultilineParams": true,
+"requireCommaBeforeLineBreak": true
 ```
 
 Related settings in `.jshintrc`.
