@@ -24,6 +24,18 @@
 		"catch",
 		"finally"
 	],
+	"disallowNewlineBeforeBlockStatements": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"try",
+		"catch",
+		"function",
+		"class"
+	],
 	"requireBlocksOnNewline": true,
 
 	"disallowKeywords": [
@@ -67,18 +79,6 @@
 	},
 	"disallowSpaceAfterObjectKeys": true,
 	"requireSpaceBeforeObjectValues": true,
-	"disallowNewlineBeforeBlockStatements": [
-		"if",
-		"else",
-		"for",
-		"while",
-		"do",
-		"switch",
-		"try",
-		"catch",
-		"function",
-		"class"
-	],
 	"disallowPaddingNewlinesInBlocks": true,
 
 	"maximumLineLength": 100,
