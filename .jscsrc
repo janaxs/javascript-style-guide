@@ -80,6 +80,9 @@
 	"disallowSpaceAfterObjectKeys": true,
 	"requireSpaceBeforeObjectValues": true,
 	"disallowPaddingNewlinesInBlocks": true,
+	"requirePaddingNewLineAfterVariableDeclaration": true,
+	"requirePaddingNewLinesAfterUseStrict": true,
+	"validateParameterSeparator": ", ",
 
 	"maximumLineLength": 100,
 	"requireLineBreakAfterVariableAssignment": true,

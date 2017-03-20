@@ -49,6 +49,9 @@
 
     func = function () {};
     func = function a() {};
+    func = function a(a, b) {
+        a = b;
+    };
 
     // should fail
 
@@ -73,5 +76,8 @@
         }
 
         func = function a () {};
+
+        // arguments separated by ", "
+        func = function a(a , b) {
     */
 }());

@@ -237,6 +237,8 @@ Disallow space after object key but require space before object value.
 
 Disallow empty lines at the beginning and the end of a block.
 
+An empty newline should follow a var declaration.
+
 Related settings in `.jscsrc`.
 
 ```
@@ -278,6 +280,8 @@ Related settings in `.jscsrc`.
 "disallowSpaceAfterObjectKeys": true,
 "requireSpaceBeforeObjectValues": true,
 "disallowPaddingNewlinesInBlocks": true,
+"requirePaddingNewLineAfterVariableDeclaration": true,
+"validateParameterSeparator": ", ",
 ```
 
 Related settings in `.jshintrc`.
@@ -420,7 +424,15 @@ In browsers you should use strict on function level.
 
 On serverside you can use strict on file level, at the beginning of each file.
 
-`.jshintrc`
+Leave an empty line after `"use strict";`.
+
+Related settings in `.jscsrc`.
+
+```
+"requirePaddingNewLinesAfterUseStrict": true,
+```
+
+Related settings in `.jshintrc`.
 
 ```
 "strict": "true",
@@ -432,7 +444,7 @@ On serverside you can use strict on file level, at the beginning of each file.
 
 Do not use with statements. The use of with is also prohibited though [strict](#strict).
 
-`.jscs`
+Related settings in `.jscs`.
 
 ```
 "disallowKeywords": [

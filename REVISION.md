@@ -4,6 +4,7 @@ Revision history
 v0.9.3* (2017-03-20)
 ---------------------------------------
 
+* Function parameters should be separated by ", ".
 * Object keys should be a single line or each key on a separate line.
 * Assignments separated by newline.
 * Require non empty blocks to begin and end with a newline.
