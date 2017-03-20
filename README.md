@@ -7,6 +7,8 @@ JavaScript Style Guide
 
 JavaScript Style Guide for client and server code, clean, unobtrusive, unopiniated, without transpilation and plain basics together with jscs and jshint configurations.
 
+Test files are in `test` and they should pass using the config files `.jscsrc` and `.jshintrc`. This document explains and describes the setup.
+
 This is also known as the dbwebb style guide for JavaScript.
 
 
@@ -14,10 +16,10 @@ This is also known as the dbwebb style guide for JavaScript.
 Table of Content
 ----------------------------------
 
-* [Part I: Code formatting](Part-I:-Code-formatting)
-* [PART II: Good code](PART-II:-Good-code)
-* [PART III: Recommendations and Discussions](PART III:-Recommendations-and-Discussions)
-* [References and related reading](References-and-related-reading)
+* [Part I: Code formatting](part-i-code-formatting)
+* [Part II: Good code](part-ii-good-code)
+* [Part III: Recommendations and Discussions](part-iii-recommendations-and-discussions)
+* [References and related reading](references-and-related-reading)
 
 
 
@@ -28,7 +30,7 @@ This is how you should format your code, mainly related to `.jscsrc`.
 
 
 
-###Basic code formatting
+### Basic code formatting
 
 Use soft tabs, not hard tabs. Use an editor setting for soft tabs.
 
@@ -69,6 +71,8 @@ If you decide to not require semicolons, check out the following settings.
 ```
 "asi":          true,
 ```
+
+Test case: [semicolon.js](test/semicolon.js).
 
 
 
