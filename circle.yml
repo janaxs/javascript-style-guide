@@ -3,8 +3,8 @@ test:
         - make install
         - make check
 
-    #override:
-    #    - make test
+    override:
+        - make test
 
 notify:
   webhooks:
