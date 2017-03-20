@@ -26,7 +26,7 @@ Table of Content
 Part I: Code formatting
 ----------------------------------
 
-This is how you should format your code, mainly related to `.jscsrc`.
+This is how you should format your code, mainly related to [`.jscsrc`](.jscsrc).
 
 
 
@@ -54,7 +54,7 @@ There should be no trailing whitespace.
 
 
 
-###Semicolon
+### Semicolon
 
 You can decide on wether to use semicolon or not (dbwebb requires semicolon).
 
@@ -79,11 +79,11 @@ Test case: [semicolon.js](test/semicolon.js).
 Part II: Good code
 ----------------------------------
 
-This is how you write good code as best practise, mainly related to `.jshintrc`.
+This is how you write good code as best practise, mainly related to [`.jshintrc`](.jshintrc).
 
 
 
-###Use strict
+### Use strict
 
 You should use `"use strict";` on global or function level, wherever its needed.
 
