@@ -2,6 +2,7 @@ JavaScript Style Guide
 ==================================
 
 [![Build Status](https://travis-ci.org/canax/javascript-style-guide.svg?branch=master)](https://travis-ci.org/canax/javascript-style-guide)
+[![CircleCI](https://circleci.com/gh/canax/javascript-style-guide.svg?style=svg)](https://circleci.com/gh/canax/javascript-style-guide)
 
 JavaScript Style Guide for client and server code, clean, unobtrusive, unopiniated, without transpilation and plain basics together with jscs and jshint configurations.
 
@@ -96,7 +97,7 @@ On serverside you can use strict on file level, at the beginning of each file.
 Part III: Recommendations and Discussions
 ----------------------------------
 
-This is further recommendations ad discussions on good code, but these may not suite everybody.
+This is further recommendations ad discussions on good code, but these may not suite everybody or every project.
 
 
 
