@@ -11,12 +11,6 @@
         void 0;
     }
 
-    // Should fail
-    if (some)
-    {
-        void 0;
-    }
-
     if (some) {
         void 0;
     } else if (any) {
@@ -37,7 +31,9 @@
         void 0;
     }
 
-    // Fails
+    // should fail
+
+    // fails
     /*
     if (some) void 0;
 
@@ -46,6 +42,12 @@
         void 0;
     }
     else {
+        void 0;
+    }
+
+    // no newline before {
+    if (some)
+    {
         void 0;
     }
 

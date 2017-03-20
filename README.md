@@ -172,6 +172,8 @@ Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js)
 
 Statements like `if, else, for, while, do, switch, try, catch, function, return` should be followed by whitespace.
 
+The opening curly brace should go on the same line as the keyword. Do not use a linebreak before the opening curly brace.
+
 Require a space inbetween the arguments of the for statement.
 
 `for (i=1; i<0; i--) {`
@@ -250,6 +252,18 @@ Related settings in `.jscsrc`.
 },
 "disallowSpaceAfterObjectKeys": true,
 "requireSpaceBeforeObjectValues": true,
+"disallowNewlineBeforeBlockStatements": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "try",
+    "catch",
+    "function",
+    "class"
+],
 ```
 
 Related settings in `.jshintrc`.

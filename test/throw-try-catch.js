@@ -41,6 +41,8 @@
         void 0;
     }
 
+    // should fail
+
     // fails
     /*
 
@@ -60,6 +62,13 @@
         void 0;
     }
 
+    // keyword as same line as {
+    try
+    {
+        throw new UserException("Failed");
+    } finally {
+        void 0;
+    }
 
      */
 }());

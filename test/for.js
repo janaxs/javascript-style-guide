@@ -27,11 +27,17 @@
         void 0;
     }
 
-    // Should fail
+    // should fail
+
+    // fails
+    /*
+
     // curly brace on new row
     for ( ; ii > 0; ii++)
     {
         void 0;
     }
+
+     */
 
 }());

@@ -11,10 +11,15 @@
         void 0;
     }
 
-    // Should fail
+    // fails
+    /*
+
+    // no newline before {
     while (ii)
     {
         void 0;
     }
+
+     */
 
 }());

@@ -62,10 +62,22 @@
 		"allExcept": ["sparseArrays"]
 	},
 	"disallowSpaceBeforeSemicolon": {
-		"allExcept": [ "(" ]
+		"allExcept": ["("]
 	},
 	"disallowSpaceAfterObjectKeys": true,
 	"requireSpaceBeforeObjectValues": true,
+	"disallowNewlineBeforeBlockStatements": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"try",
+		"catch",
+		"function",
+		"class"
+	],
 
 	"maximumLineLength": 100,
 	"requireAlignedMultilineParams": true,

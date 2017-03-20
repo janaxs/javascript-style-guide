@@ -4,6 +4,7 @@ Revision history
 v0.9.2* (2017-03-20)
 ---------------------------------------
 
+* Disallow newline before block statements.
 * Disallow multiline strings separated with backslash.
 * Require a comma before a linebreak.
 * Disallow keywords on own line following a closing brace.
