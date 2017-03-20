@@ -74,5 +74,4 @@
 
         func = function a () {};
     */
-
 }());

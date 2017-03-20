@@ -15,5 +15,4 @@
         console.log(first);
     }
     */
-
 }());

@@ -13,5 +13,4 @@
     while (ghi) {
         void 0;
     }
-
 }());

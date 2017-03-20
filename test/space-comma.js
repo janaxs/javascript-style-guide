@@ -20,5 +20,4 @@
     // sparse arrays allowed by jscs, prohibited by jshint
     b = [1, 2, , , 3];
     */
-
 }());
