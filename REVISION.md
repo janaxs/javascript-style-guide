@@ -4,6 +4,7 @@ Revision history
 v0.9.2* (2017-03-20)
 ---------------------------------------
 
+* Disallow keywords on own line following a closing brace.
 * Code examples on block.
 * Use disallowTabs instead of disallowMixedSpacesAndTabs.
 

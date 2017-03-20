@@ -17,4 +17,14 @@
         void 0;
     } while (ii);
 
+    // fails
+    /*
+
+    // keyword on same line as }
+    do {
+        void 0;
+    }
+    while (ii);
+
+     */
 }());

@@ -16,6 +16,13 @@
 		"switch",
 		"try",
 		"catch",
+		"finally"
+	],
+	"disallowKeywordsOnNewLine": [
+		"else",
+		"while",
+		"catch",
+		"finally"
 	],
 
 	"disallowKeywords": [

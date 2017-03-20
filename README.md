@@ -29,7 +29,7 @@ Table of Content
 Part I: Code formatting
 ----------------------------------
 
-This is how you should format your code, mainly related to [`.jscsrc`](.jscsrc).
+This is how you should format your code, the rules are mainly related to [`.jscsrc`](.jscsrc) but it has some effect on [`.jshintrc`](.jshintrc).
 
 * [Basic code formatting](#basic-code-formatting)
 * [Semicolon](#semicolon)
@@ -114,6 +114,28 @@ switch (some) {
     break;
 ```
 
+Keywords following a closing curly brace should be on the same line.
+
+```
+if (some) {
+    void 0;
+} else {
+    void 0;
+}
+
+do {
+    void 0;
+} while (ii);
+
+try {
+    throw "Failed";
+} catch (exc) {
+    throw exc;
+} finally {
+    void 0;
+}
+```
+
 Related settings in `.jscsrc`.
 
 ```
@@ -126,10 +148,17 @@ Related settings in `.jscsrc`.
     "switch",
     "try",
     "catch",
+    "finally"
+],
+"disallowKeywordsOnNewLine": [
+    "else",
+    "while",
+    "catch",
+    "finally"
 ],
 ```
 
-`.jshintrc`
+Related settings in `.jshintrc`.
 
 ```
 "curly": true,

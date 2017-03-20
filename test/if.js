@@ -31,9 +31,24 @@
         void 0;
     }
 
+    if (some) {
+        void 0;
+    } else {
+        void 0;
+    }
+
     // Fails
     /*
     if (some) void 0;
+
+    // else on same line as }
+    if (some) {
+        void 0;
+    }
+    else {
+        void 0;
+    }
+
     */
 
 }());
