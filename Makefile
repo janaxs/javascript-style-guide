@@ -129,6 +129,8 @@ tag-prepare:
 	grep version package.json
 	git tag
 	git status
+	#gps && gps --tags
+	#npm publish
 
 
 
