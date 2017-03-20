@@ -69,6 +69,10 @@
     /*
     // rows acceeding maximuLineLength fails
 
+    // multiline strings with \
+    a = "moped \
+    ";
+
     */
 
 }());

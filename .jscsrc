@@ -68,5 +68,7 @@
 	"requireSpaceBeforeObjectValues": true,
 
 	"maximumLineLength": 100,
-	"requireAlignedMultilineParams": true
+	"requireAlignedMultilineParams": true,
+	"requireCommaBeforeLineBreak": true,
+	"disallowMultipleLineStrings": true
 }

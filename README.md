@@ -266,7 +266,7 @@ Test case: [if.js](test/if.js), [for.js](test/for.js), [while.js](test/while.js)
 
 A line should not be to long, the recommendation is 80 characters, but feel fre to set 100 or 120 (dbwebb uses 100 characters), the less the better.
 
-Make a multiline expression to fit the proposed line length.
+Make a multiline expression to fit the proposed line length. Disallow using `\` to create multiline strings. Use concatenation instead, or template strings.
 
 ```
 a = "a very long row"
