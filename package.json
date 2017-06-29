@@ -1,6 +1,6 @@
 {
   "name": "javascript-style-guide",
-  "version": "v0.9.5",
+  "version": "v0.9.6",
   "description": "JavaScript Style Guide with basics for client and server code, clean, unobtrusive, unopiniated, without transpilation together with jscs and jshint configurations.",
   "main": null,
   "devDependencies": {
