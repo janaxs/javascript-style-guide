@@ -504,6 +504,22 @@ Test case: [with.js](test/with.js).
 
 
 
+### No use of console for logging
+
+Eshint suggest no use of `console` when in a browser, but is should be allowed in Node. This rule is default disabled to allow usage of console.
+
+Related settings in `.eslintrc.json`.
+
+```
+"rules": {
+    "no-console": 0
+}
+```
+
+Test case: [console.js](test/console.js).
+
+
+
 Part III: Recommendations and Discussions
 ----------------------------------
 

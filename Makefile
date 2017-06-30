@@ -165,7 +165,7 @@ jscs-fix:
 
 
 
-# target: eslint               - Fix fixable validation errors with eslint.
+# target: eslint             - Validate using eslint.
 .PHONY: eslint
 eslint:
 	@$(call HELPTEXT,$@)
@@ -173,7 +173,7 @@ eslint:
 
 
 
-# target: eslint-fix         - Validate using eslint.
+# target: eslint-fix         - Fix fixable validation errors with eslint.
 .PHONY: eslint-fix
 eslint-fix:
 	@$(call HELPTEXT,$@)
