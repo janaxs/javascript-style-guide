@@ -1,9 +1,10 @@
 Revision history
 =======================================
 
-v0.9.* (2017-06-30)
+v0.9.7 (2017-09-18)
 ---------------------------------------
 
+* Upgrade eslint to v4.5.0 and eslint-plugin-react to v7.3.0.
 * Allow usage of console, fix #2.
 
 
