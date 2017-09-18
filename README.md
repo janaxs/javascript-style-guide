@@ -535,7 +535,7 @@ You should use an editor with inline validation, the editor executes the validat
 
 For example:
 
-* Atom with plugin linter-jscs and linter-jshint.
+* Atom with plugin linter-jscs, linter-eslint and linter-jshint.
  
 
 
@@ -545,4 +545,5 @@ References and related reading
 Read on to learn more on JavaScript style and best practices.
 
 * [JSCS](http://jscs.info/)
+* [ESLint](https://eslint.org/)
 * [JSHint](http://jshint.com/)
