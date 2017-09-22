@@ -128,6 +128,7 @@ update:
 .PHONY: tag-prepare
 tag-prepare:
 	@$(call HELPTEXT,$@)
+	grep "^v." REVISION.md | head -1
 	grep version package.json
 	git tag
 	git status
