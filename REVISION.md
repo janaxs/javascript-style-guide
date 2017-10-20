@@ -1,7 +1,7 @@
 Revision history
 =======================================
 
-v0.9.8* (2017-09-18)
+v0.9.8 (2017-10-20)
 ---------------------------------------
 
 * Eslint allow values to be aligned in object properties declaration.

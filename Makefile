@@ -130,7 +130,7 @@ tag-prepare:
 	@$(call HELPTEXT,$@)
 	grep "^v." REVISION.md | head -1
 	grep version package.json
-	git tag
+	git tag | tail -1
 	git status
 	#gps && gps --tags
 	#npm publish
