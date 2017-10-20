@@ -4,6 +4,8 @@ Revision history
 v0.9.8* (2017-09-18)
 ---------------------------------------
 
+* Jscs not require space after keyword function.
+* Upgrade eslint.
 * Add links to eslint in README.
 
 

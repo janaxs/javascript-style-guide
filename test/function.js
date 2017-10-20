@@ -41,13 +41,17 @@
         void 0;
     };
 
+    func = function() {
+        void 0;
+    };
+
     func();
 
     (function () {
         void 0;
     })();
 
-    (function () {
+    (function() {
         void 0;
     }());
 
@@ -61,7 +65,7 @@
         return 1;
     })();
 
-    func = (function () {
+    func = (function() {
         return 1;
     }());
 
