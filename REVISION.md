@@ -1,6 +1,15 @@
 Revision history
 =======================================
 
+v0.9.9 (2017-10-26)
+---------------------------------------
+
+* Readme point out that ESLint is to replace JSHint.
+* Readme rephrase use 4 spaces for a tab, fix #4.
+* Readme rephrase use semicolon, fix #4.
+* Readme allow function expression without space before (), fix #3.
+
+
 v0.9.8 (2017-10-20)
 ---------------------------------------
 

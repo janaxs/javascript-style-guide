@@ -6,13 +6,15 @@ JavaScript Style Guide
 [![Build Status](https://travis-ci.org/canax/javascript-style-guide.svg?branch=master)](https://travis-ci.org/canax/javascript-style-guide)
 [![CircleCI](https://circleci.com/gh/canax/javascript-style-guide.svg?style=svg)](https://circleci.com/gh/canax/javascript-style-guide)
 
-JavaScript Style Guide with basics for client and server code, clean, unobtrusive, unopiniated, without transpilation together with jscs and jshint configurations.
+JavaScript Style Guide with basics for client and server code, clean, unobtrusive, unopiniated, without transpilation together with jscs and eslint (jshint) configurations.
 
 The guide deals with both ES5 and ES6 recommendations, without using a transpiler, trying to propose a common way of writing JavaScript, independantly on writing code for browser, server, ES5 or ES6.
 
-Test- and example files are in [`test`](test) and they should pass using the config files [`.jscsrc`](.jscsrc) and [`.jshintrc`](.jshintrc). This document explains and describes the setup.
+Test- and example files are in [`test`](test) and they should pass using the config files [`.jscsrc`](.jscsrc) and [.eslintrc.json](.eslintrc.json) ([`.jshintrc`](.jshintrc)). This document explains and describes the setup.
 
-This is also known as the dbwebb style guide for JavaScript.
+ESLint is to replace JSHint. Both exists for now.
+
+This is also known as the dbwebb style guide for JavaScript, used in teaching web programmers at https://dbwebb.se/.
 
 
 
@@ -47,7 +49,7 @@ Use soft tabs (spaces), not hard tabs (`\t`). Use an editor setting for soft tab
 
 Use Unix style linefeed `\n`.
 
-Tab size can be 2 or 4 (dbwebb uses 4).
+Use tab size 4.
 
 A file should have a empty line feed at the end.
 
@@ -70,7 +72,7 @@ Settings related to `.jscsrc`.
 
 ### Semicolon
 
-You can decide on wether to use semicolon or not (dbwebb requires semicolon).
+Use semicolons.
 
 Settings related to `.jscsrc`.
 
@@ -244,9 +246,10 @@ When defining a function, disallow space before round brace and require a space 
 function a() {
 ```
 
-Require a space before opening curly brace in function expressions and before the round brace (excluded in named function where the space is before the name).
+Require a space before opening curly brace in function expressions and before (optional) the round brace (excluded in named function where the space is before the name).
 
 ```
+var x = function() {};  // Allow function expression without space
 var x = function () {};
 var x = function a() {};
 ```
