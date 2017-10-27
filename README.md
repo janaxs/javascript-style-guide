@@ -2,9 +2,9 @@ JavaScript Style Guide
 ==================================
 
 [![npm version](https://badge.fury.io/js/javascript-style-guide.svg)](https://badge.fury.io/js/javascript-style-guide)
-[![Gitter](https://badges.gitter.im/canax/javascript-style-guide.svg)](https://gitter.im/canax/javascript-style-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
-[![Build Status](https://travis-ci.org/canax/javascript-style-guide.svg?branch=master)](https://travis-ci.org/canax/javascript-style-guide)
-[![CircleCI](https://circleci.com/gh/canax/javascript-style-guide.svg?style=svg)](https://circleci.com/gh/canax/javascript-style-guide)
+[![Gitter](https://badges.gitter.im/janaxs/javascript-style-guide.svg)](https://gitter.im/janaxs/javascript-style-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+[![Build Status](https://travis-ci.org/janaxs/javascript-style-guide.svg?branch=master)](https://travis-ci.org/janaxs/javascript-style-guide)
+[![CircleCI](https://circleci.com/gh/janaxs/javascript-style-guide.svg?style=svg)](https://circleci.com/gh/janaxs/javascript-style-guide)
 
 JavaScript Style Guide with basics for client and server code, clean, unobtrusive, unopiniated, without transpilation together with jscs and eslint (jshint) configurations.
 
