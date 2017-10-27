@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/canax/javascript-style-guide.git"
+    "url": "git+https://github.com/janaxs/javascript-style-guide.git"
   },
   "keywords": [
     "javascript",
@@ -26,7 +26,7 @@
   "author": "Mikael Roos mos@dbwebb.se (https://mikaelroos.se)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/canax/javascript-style-guide/issues"
+    "url": "https://github.com/janaxs/javascript-style-guide/issues"
   },
-  "homepage": "https://github.com/canax/javascript-style-guide#readme"
+  "homepage": "https://github.com/janaxs/javascript-style-guide#readme"
 }
